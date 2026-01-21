@@ -1,0 +1,9 @@
+Invoice Number,Date,Customer Name,Total Amount,Item Description,Item Quantity,Item Price,Item Total
+INV001,2026-01-15,ABC Corp,,Item A,2,10,
+INV001,2026-01-15,ABC Corp,,Item B,1,20,
+INV002,2026-01-16,XYZ Ltd,,Item C,3,15,
+INV003,2026-01-17,LMN Inc,,Item D,5,,
+INV004,2026-01-18,OPQ Co,,Item E,two,30,
+INV005,2026-31-01,RST Corp,,Item F,1,50,
+INV006,2026-01-19,UVW Ltd,,Item G,1,100,
+INV006,2026-01-19,UVW Ltd,,Item H,2,150,

@@ -1,6 +1,6 @@
 # Invoice Management System
 
-A Node.js application for processing and validating invoice data from CSV files with comprehensive error handling and multi-line invoice support.
+A Node.js application for processing and validating invoice data from CSV or Excel files with comprehensive error handling and multi-line invoice support.
 
 ## 📋 Table of Contents
 

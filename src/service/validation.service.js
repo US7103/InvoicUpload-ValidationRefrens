@@ -30,10 +30,18 @@ module.exports=(rows)=>{
             }
         });
 
-        const invoiceNo= row['Invoice Number'];
-        if(invoiceNo){
-            if(seenInvoices.has(invoiceNo) === false){
-                seenInvoices.add(invoiceNo);
+        const invoiceNo = row['Invoice Number'];
+        const itemDesc = row['Item Description'];
+
+        if (invoiceNo && itemDesc) {
+            const key = `${invoiceNo}__${itemDesc}`; // composite key
+
+            if (seenInvoices.has(key)) {
+                errors.push(
+                    `Duplicate Item Description for Invoice Number ${invoiceNo}`
+                );
+            } else {
+                seenInvoices.add(key);
             }
         }
 
